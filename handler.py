@@ -8,8 +8,8 @@ from psycopg2 import Error
 
 
 def rmq():
-    credentials = pika.PlainCredentials(username='admin', password='7NkFGG409M')
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host='10.0.89.14', port=5672, credentials=credentials))
+    credentials = pika.PlainCredentials(username='', password='')
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='', port=, credentials=credentials))
     channel = connection.channel()
     channel.queue_declare(queue='puid', durable=True)
 
