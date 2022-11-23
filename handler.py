@@ -17,11 +17,11 @@ def rmq():
         data = json.loads(body)
         #Сonnected to PostgreSQL
 
-        connection = psycopg2.connect(user="mydbuser",
-                                      password="123456789",
-                                      host="10.0.89.31",
-                                      port="5432",
-                                      database="journals")
+        connection = psycopg2.connect(user="",
+                                      password="",
+                                      host="",
+                                      port="",
+                                      database="dbname")
 
         cursor = connection.cursor()
         cursor.execute("SELECT version();")
